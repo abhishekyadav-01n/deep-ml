@@ -7,37 +7,22 @@ def top_three_largest(values):
     second = float('-inf')
     third = float('-inf')
 
-    for i in values:
-        first = max(first , i)
+    for value in values:
 
-    freq_first = 1
-    
-    for i in values:
-        if(i == first and freq_first == 1):
-            freq_first = freq_first-1
-            continue
-        
-        second = max(second , i)
+        if value > first:
+            third = second
+            second = first
+            first = value
 
-    freq_sec = 2 if first == second else 1
-    freq_first = 1
+        elif value > second:
+            third = second
+            second = value
 
-    for i in values:
-        if(first == second and freq_first != 0):
-            freq_first = freq_first-1
-            continue
-        
-        if(i == first and freq_first == 1):
-            freq_first = freq_first-1
-            continue
-        
-        if(i == second and freq_sec == 1):
-            freq_sec = freq_sec-1
-            continue
-        
-        third = max(third , i)
+        elif value > third:
+            third = value
 
-    if len(values) == 2:
+
+    if(len(values) == 2):
         return [first , second]
 
     return [first , second, third]    
