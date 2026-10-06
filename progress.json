@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-06T07:07:07.042Z",
+  "generated_at": "2026-10-06T07:07:26.055Z",
   "items": {
     "problem:1137": {
       "kind": "problem",
@@ -127,9 +127,9 @@
       "url": "https://www.deep-ml.com/problems/1160",
       "path": "problems/1160-valid-palindrome-ii-delete-at-most-one-char",
       "first_solved_at": "2026-10-06T07:07:07.791Z",
-      "last_pushed_at": "2026-10-06T07:07:07.791Z",
+      "last_pushed_at": "2026-10-06T07:07:25.004Z",
       "language": "python",
-      "lines": 33
+      "lines": 31
     }
   }
 }

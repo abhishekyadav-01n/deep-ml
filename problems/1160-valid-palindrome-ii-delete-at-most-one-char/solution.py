@@ -9,7 +9,6 @@ def valid_palindrome(s):
             right -= 1
 
         else:
-            # Try deleting the left character
             l = left + 1
             r = right
 
@@ -20,7 +19,6 @@ def valid_palindrome(s):
             if l >= r:
                 return True
 
-            # Try deleting the right character
             l = left
             r = right - 1
 
